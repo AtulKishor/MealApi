@@ -27,14 +27,12 @@ function addMeal(meal){
 
 async function addMeals(){
     console.log("MAKING");
-    mealResult.textContent = '';
+    mealResult.innerHTML = '';
+    if (!searchQuery.value) return;
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchQuery.value}`;
     const response = await fetch(url);
     const data = (await response.json()).meals;
     data.forEach(addMeal);
 }
 
-searchQuery.addEventListener('input',(e)=>{
-    mealResult.textContent = '';
-    searchQuery.value && addMeals();
-});
+searchQuery.addEventListener('input',addMeals);
