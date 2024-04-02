@@ -15,6 +15,10 @@ h1, h3 {
 }
 
 /* home page */
+.fav {
+    align-self: flex-end;
+}
+
 .meal-header {
     text-decoration: none;
     margin-top: 30vh;
@@ -29,38 +33,45 @@ h1, h3 {
     font-size: 1.2rem;
 }
 
-#search-result {
-    max-height: 50vh;
-    overflow: auto;
+ul {
     list-style: none;
+    padding: 0px;
 }
 
-#search-result li{
+ul li{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: 5px;
 }
 
-#search-result li a{
-    display: block;
+ul li:hover{
+    background-color: olivedrab;
+    border-radius: 5px;
+}
+
+
+ul li *{
+    display: inline-block;
     text-decoration: none;
     color: black;
-    width: 90%;
-    height: 100%;
-}
-#search-result li a:hover{
-    background-color: olivedrab;
-    box-shadow: 2px greenyellow;
 }
 
-#search-result li button{
+ul li button {
     border-radius: 5px;
     box-shadow: 2px 2px 3px grey;
     background-color: #8b4513;
-    color: green;
+    color: wheat;
     margin: 5px;
 }
-#search-result li button:hover{
+
+ul li button:hover{
     background-color: darkslategray;
+}
+
+#search-result {
+    max-height: 50vh;
+    overflow: auto;
 }
 
 /* meal details */
@@ -80,3 +91,6 @@ h1, h3 {
 }
 
 /* favourite meals */
+.remove:hover{
+    background-color: red;
+}

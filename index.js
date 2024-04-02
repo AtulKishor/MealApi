@@ -11,12 +11,7 @@ function addToList() {
     const storedArray = JSON.parse(localStorage.getItem('favourite'));
     storedArray.push(this.name);
     localStorage.setItem('favourite', JSON.stringify(storedArray));
-}
-
-function removeMeal(indexToRemove) {
-    const storedArray = JSON.parse(localStorage.getItem('favourite'));
-    storedArray.splice(indexToRemove, 1);
-    localStorage.setItem('favourite', JSON.stringify(storedArray));
+    alert("Meal added to Your Favourite Meals!💓")
 }
 
 function addMeal(meal){
