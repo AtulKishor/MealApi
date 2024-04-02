@@ -6,16 +6,12 @@ Create a meal app to store and search meals. Use ONLY vanilla javascript, no lib
 https://www.themealdb.com/api.php
 Search meal by name
 www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
-'''
-List all meals by first letter ==> not useful if word lies in between
-www.themealdb.com/api/json/v1/1/search.php?f=a 
 
-Lookup full meal details by id ==> avoid querying API unnecessarily, fetch from DB instead
+Lookup full meal details by id
 www.themealdb.com/api/json/v1/1/lookup.php?i=52772
-'''
-1 Home Page
-    Search any meal from the API and display the search results on the frontend (as I type the search results should update, just like Google does for suggestions).
-    # search api
+
+1 Home Page 
+    Search any meal from the API and display the search results on the frontend (as I type the search results should update, just like Google does for suggestions).# search api
     Each search result of the meal should have a favourite button, clicking on which the meal should be added to “My favourite meals” (a list).
     # to DB
     On clicking any particular search result (any meal), open a new page with more information about that meal(meal page)

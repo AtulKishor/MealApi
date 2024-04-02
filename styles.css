@@ -8,23 +8,75 @@ body {
     background-image: url("https://transparenttextures.com/patterns/food.png");
 }
 
-h1 {
+h1, h3 {
+    text-align: center;
     text-decoration: underline;
     color: azure;
 }
 
 /* home page */
-.meal-search {
+.meal-header {
     text-decoration: none;
     margin-top: 30vh;
     padding-left: 30px;
 }
 
-input {
-    font-size: 1.2rem;
-    color: firebrick;
+.search {
+    width: 70%;
 }
 
-button {
-    background-color: #ff5733;
+.search * {
+    font-size: 1.2rem;
 }
+
+#search-result {
+    max-height: 50vh;
+    overflow: auto;
+    list-style: none;
+}
+
+#search-result li{
+    display: flex;
+    align-items: center;
+}
+
+#search-result li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 90%;
+    height: 100%;
+}
+#search-result li a:hover{
+    background-color: olivedrab;
+    box-shadow: 2px greenyellow;
+}
+
+#search-result li button{
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px grey;
+    background-color: #8b4513;
+    color: green;
+    margin: 5px;
+}
+#search-result li button:hover{
+    background-color: darkslategray;
+}
+
+/* meal details */
+.mealImage {
+    width: 400px;
+    color: brown;
+    text-align: center;
+    #image {
+        width: 100%;
+        border: 2px solid gold;
+        box-shadow: 4px 3px 4px greenyellow;
+    }
+}
+
+#description {
+    text-align: center;
+}
+
+/* favourite meals */
