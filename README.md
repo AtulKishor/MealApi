@@ -34,3 +34,6 @@ To render mealDetails page through id of the queried meal.
 ## Dependencies
 
 - Bootstrap 5.3.3: CSS framework used for styling.
+
+## Hosted link:
+https://atulkishor.github.io/MealApi/
